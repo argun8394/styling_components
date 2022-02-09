@@ -4,5 +4,10 @@ export const Button = styled.button`
 border:none;
 margin:2px;
 color:#fff;
-padding:10px;
+padding:12px 28px;
+text-align:center;
+display:inline-block;
+cursor:pointer;
+font-size:18px;
+background-color: ${props => props.primary ? "blue" : "purple"};
 `;
