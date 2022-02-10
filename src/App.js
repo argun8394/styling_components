@@ -9,6 +9,7 @@ import { ThemeProvider, createTheme } from '@material-ui/core/styles';
 import { orange, green } from '@material-ui/core/colors';
 import TypographyComp from './components/material-ui/typography/TypographyComp';
 import Wrapper from './components/material-ui/wrapper/Wrapper'
+import Cards from './components/material-ui/cards/Cards';
 
 const theme = createTheme({ /*Tema değişikliklerini gönderdik */
   palette: {
@@ -41,6 +42,7 @@ function App() {
      <Button primary>Second</Button> */}
             {/*<StyledComponents/>{/*App.js kalabalık olmaması açısından yukarıdaki kullanım yerine bu kullanım tercih edilmelidir */}
             <TypographyComp />
+            <Cards />
             <TextFieldComp />
             <CheckBoxComp />
             <Buttons />
