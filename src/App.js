@@ -5,8 +5,9 @@ import './App.css';
 import Buttons from './components/material-ui/buttons/Buttons';
 import CheckBoxComp from './components/material-ui/checkbox/CheckBoxComp';
 import TextFieldComp from './components/material-ui/text-field/TextFieldComp';
-import {ThemeProvider,createMuiTheme} from '@material-ui/core/styles';
+import {ThemeProvider, createMuiTheme} from '@material-ui/core/styles';
 import { orange, green } from '@material-ui/core/colors';
+import TypographyComp from './components/material-ui/typography/TypographyComp';
 
 const theme = createMuiTheme({ /*Tema değişikliklerini gönderdik */
   palette: {
@@ -15,6 +16,13 @@ const theme = createMuiTheme({ /*Tema değişikliklerini gönderdik */
     },
     secondary: {
       main: green[300]
+    },
+    typography: {/*Typography nin stillemesini istediğimiz şekilde yapabilirz */
+      h2: {fontSize:38,
+      padding:2},
+      subtitle1: {
+        marginBottom: 10
+      }
     }
   }
 })
@@ -28,6 +36,7 @@ function App() {
      {/* <Button>Click me</Button>
      <Button primary>Second</Button> */}
      {/*<StyledComponents/>{/*App.js kalabalık olmaması açısından yukarıdaki kullanım yerine bu kullanım tercih edilmelidir */}
+     <TypographyComp/>
      <TextFieldComp/>
      <CheckBoxComp/>
      <Buttons/>
