@@ -3,6 +3,7 @@ import './App.css';
 // import { Button } from './components/styled-comp/button/Button.styles';
 // import StyledComponents from './components/styled-comp/index';
 import Buttons from './components/material-ui/buttons/Buttons';
+import CheckBoxComp from './components/material-ui/checkbox/CheckBoxComp';
 
 
 function App() {
@@ -13,6 +14,8 @@ function App() {
      {/* <Button>Click me</Button>
      <Button primary>Second</Button> */}
      {/*<StyledComponents/>{/*App.js kalabalık olmaması açısından yukarıdaki kullanım yerine bu kullanım tercih edilmelidir */}
+     
+     <CheckBoxComp/>
      <Buttons/>
 
      
